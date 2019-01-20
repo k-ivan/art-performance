@@ -1,0 +1,9 @@
+@include max(1023) {
+  @import '../../../node_modules/tiny-slider/src/tiny-slider.scss'
+}
+
+@include min(1024) {
+  .tns-liveregion {
+    display: none;
+  }
+}

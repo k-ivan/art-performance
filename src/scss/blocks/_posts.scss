@@ -1,0 +1,27 @@
+.posts {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top: 3px solid #000;
+}
+
+.posts__wrap {
+  margin-left: -25px;
+  margin-right: -25px;
+  overflow: hidden;
+  @include min(1024) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.posts__item {
+  padding: 25px;
+  @include min(1024) {
+    outline: 0;
+    left: auto !important;
+    width: 33.333%;
+  }
+  @include min(1200) {
+    width: 25%;
+  }
+}
